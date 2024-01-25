@@ -1,9 +1,13 @@
 import { GetStaticProps } from 'next';
+import { appInsights } from '@/components/ApplicationInsightsService';
 
 export default function HomePage() {
-	return <div>HomePage having leak</div>
+
+
+  return <p>test</p>
+
 }
 
 export const getServerSideProps: GetStaticProps = async context => {
-	return { props: {} }
+  return { props: {} };
 };
