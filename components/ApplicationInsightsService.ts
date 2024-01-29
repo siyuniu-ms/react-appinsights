@@ -4,13 +4,7 @@ const reactPlugin = new ReactPlugin();
 const appInsights = new ApplicationInsights({
   config: {
     connectionString: "InstrumentationKey=814a172a-92fd-4950-9023-9cf13bb65696;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/",
-    extensions: [reactPlugin],
-    enableAutoRouteTracking: true,
-    disableAjaxTracking: false,
-    autoTrackPageVisitTime: true,
-    enableCorsCorrelation: true,
-    enableRequestHeaderTracking: true,
-    enableResponseHeaderTracking: true,
+    extensions: [reactPlugin]
   }
 });
 console.log("connectionString: " + appInsights.config.connectionString);
